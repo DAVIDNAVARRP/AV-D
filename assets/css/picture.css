@@ -1,0 +1,58 @@
+/* ---- BASE STYLES (Desktop first) ---- */
+.picture {
+    position: relative;
+    min-height: 70vh;
+    width: 100vw;
+    background-image: url("https://static.wixstatic.com/media/0b340f_557afb35b3524f499020c4248086cee0~mv2_d_5184_3456_s_4_2.jpg/v1/fill/w_1351,h_640,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/0b340f_557afb35b3524f499020c4248086cee0~mv2_d_5184_3456_s_4_2.jpg");
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.picture__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.4);
+}
+@media screen and (width <= 1024px){
+    .picture{
+        min-height: 40vh;
+        background-attachment: scroll;
+        background-position: center;
+    }
+    .picture__overlay{
+        background: rgba(0, 0, 0, 0.3);
+    }
+}
+@media screen and (width <= 768px){
+.picture {
+        min-height: 35vh;
+        background-size: cover;
+        background-attachment: scroll;
+        padding: 1rem;
+    }
+
+    .picture__overlay {
+        background: rgba(0, 0, 0, 0.25);
+    }
+}
+
+@media (width <= 480px) {
+    .picture {
+        min-height: 30vh;
+        padding: 0.5rem;
+    }
+
+    .picture__overlay {
+        background: rgba(0, 0, 0, 0.2);
+    }
+}

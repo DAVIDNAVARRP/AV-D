@@ -1,0 +1,125 @@
+.container-contact {
+    padding: 70px 30px;
+    min-height: 88vh;
+    background-blend-mode: overlay;
+}
+
+.contact-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: var(--space-md);
+    text-align: center;
+
+    h2 {
+        font-size: var(--font-size-xl);
+        margin-bottom: var(--space-md);
+        text-transform: capitalize;
+    }
+
+    p {
+        font-size: 1.6rem;
+        padding: 20px;
+        font-weight: 600;
+        margin-bottom: var(--space-md);
+    }
+}
+
+
+/* Formulario */
+.event-form-section {
+    display: flex;
+    justify-content: center;
+    padding: var(--space-sm);
+    animation: fadeIn 1s ease-out;
+}
+
+.form-container {
+    max-width: 900px;
+    width: 100%;
+
+    label {
+        padding: 10px 0;
+        display: block;
+        font-size: var(--font-size-md);
+        margin-bottom: var(--space-xs);
+        font-weight: 500;
+    }
+
+    input,
+    textarea,
+    button {
+        width: 100%;
+        padding: var(--space-sm);
+        font-size: var(--font-size-md);
+        border: none;
+        background: transparent;
+        border-bottom: 2px solid var(--color-muted);
+        transition: var(--transition);
+    }
+
+    button {
+        background-color: var(--color-dark);
+        color: var(--text-light);
+        border-radius: var(--radius-lg);
+        text-transform: uppercase;
+        margin-top: var(--space-sm);
+        cursor: pointer;
+
+        &:hover {
+            background-color: var(--title-bg);
+            color: var(--color-dark);
+            transform: scale(1.05);
+        }
+
+        &:active {
+            transform: scale(0.98);
+        }
+    }
+}
+
+.form-group,
+.form-group-block {
+    margin-bottom: var(--space-sm);
+}
+
+input:focus-visible,
+textarea:focus-visible,
+button:focus-visible {
+    outline: none;
+    outline-offset: 2px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

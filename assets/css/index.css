@@ -1,0 +1,51 @@
+@import url(navbar.css);
+@import url(banner.css);
+@import url(acerca.css);
+@import url(nosotros.css);
+@import url(overlay.css);
+@import url(picture.css);
+@import url(services.css);
+@import url(djs.css);
+@import url(contact.css);
+@import url(footer.css);
+@import url(politica.css);
+:root {
+    --color-bg: rgba(0, 0, 0, 0.9);
+    --color-border: rgba(255, 255, 255, 0.2);
+    --color-gold: #f39c12;
+    --color-dark: #1a1a1a;
+    --text-light: #fff;
+    --text-muted: #ccc;
+    --transition: transform 0.3s ease;
+    --font-main: "Montserrat", sans-serif;
+    --overlay-gradient: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    --title-bg: rgba(255, 255, 255, 0.85);
+    /* Font Sizes */
+    --font-size-xs: 1.2rem;
+    --font-size-sm: 1.4rem;
+    --font-size-md: 1.8rem;
+    --font-size-lg: 2rem;
+    --font-size-xl: 2.8rem;
+} 
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: var(--font-family);
+    scroll-behavior: smooth;
+    
+}
+
+body {
+    font-family: var(--font-main);
+    padding-top: 70px; 
+}
